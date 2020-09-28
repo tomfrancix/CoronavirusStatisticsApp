@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Covid-19 Stats</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Content/bootstrap.min.css" rel="stylesheet">
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Content/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="Content/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--    <link rel="stylesheet" type="text/css" href="animate.css">-->
+<script data-ad-client="ca-pub-2566484892030513" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<link href="csslinegraph.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <ul style="width:100%; margin:0 auto;">
+                <li style="font-size:150%;margin-top:-6px;"><a id="titlee" style="color:hotpink;" href="#home">COVID-19</a></li>
+                <div id="hamburger" onclick="displaymenu();">
+                    <div class="ham"></div>
+                    <div class="ham"></div>
+                    <div class="ham"></div>
+                </div>
+                <div id="hamburgerhide" onclick="hidemenu();">
+                    <div class="ham"></div>
+                    <div class="ham"></div>
+                    <div class="ham"></div>
+                </div>
+                <div id="menu">
+                    <li class="right"><a onclick="mainnav(1);">ABOUT</a></li>
+                    <li class="right"><a onclick="mainnav(3);">GLOBAL STATISTICS</a></li>
+                    <li class="right"><a onclick="mainnav(2);">NATIONAL STATISTICS</a></li>
+                    <li class="right"><a onclick="mainnav(5);">USEFUL LINKS</a></li>
+                    <li class="right"><a onclick="mainnav(4);">CONTACT</a></li>
+                </div>
+
+            </ul>
+        </div>
+    </div>
+    <div id="about"></div>
+    <div class="container-fluid background" style="height:35vh;">
+
+        <div class="jumbotron" style="background:none; padding:30px;">
+            <h1 STYLE="font-family:serif;">CORONAVIRUS</h1></div>
+    </div>
+    <div class="container">
+        <br>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidebarnav">
+                    <div id="sbt1" class="sidebartab" onclick="shower(65);" >
+                        <h4>WELCOME</h4>
+                    </div>
+                    <div  id="sbt" class="sidebartab" onclick="shower(1);">
+                        <h4>INTRODUCTION</h4>
+                    </div>
+                    <div  id="sbt" class="sidebartab" onClick="shower(2);">
+
+                        <h4>SYMPTOMS</h4>
+                    </div>
+                    <div  id="sbt" class="sidebartab" onclick="shower(3);">
+
+                        <h4>CAUSE</h4>
+                    </div>
+                    <div  id="sbt" class="sidebartab" onclick="shower(4);">
+                        <h4>PREVENTION</h4>
+                    </div>
+                    <div  id="sbt" class="sidebartab" onclick="shower(5);">
+                        <h4>MANAGEMENT</h4>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-9" id="content">
+                <div id="a1" class="panel text">
+                    <h3>INTRODUCTION</h3>
+                    <br>
+                    <div class="jumbotron textjumbo">
+                        <p>Corona virus, also known as COVID-19 is an infection disease caused by severe respiratory synodrome coronavirus.</p>
+                    </div>
+                    <p>The disease was first discovered in 2019 in Wuhan, China, and has since spread globally. Common symptoms include fever, cough and shortness of breath. Muscle pain, sputum production and sore throat are less common. While the majority of cases result in mild symptoms, some progress to severe pneumonia and multi-organ failure. The rate of deaths per number of diagnosed cases is estimated to be 3.4% but varies by age and other health conditions.</p>
+                    <p>The infection is typically spread from one person to another via respiratory droplets produced during coughing and sneezing. Time from exposure to onset of symptoms is generally between two and 14 days, with an average of five days. The standard method of diagnosis is by reverse transcription polymerase chain reaction from a nasopharyngeal swab or throat swab. The infection can also be diagnosed from a combination of symptoms, risk factors and a chest CT scan showing features of pneumonia</p>
+                </div>
+                <div id="a2" class="panel text">
+                    <h3 style="text-align: left;">SIGNS AND SYMPTOMS</h3>
+                    <br>
+                    <div class="jumbotron textjumbo">
+                        <p>Those infected with the virus may either be asymptomatic or develop flu-like symptoms that include fever, cough and shortness of breath. Diarrhoea and upper respiratory symptoms such as sneezing, runny nose, or sore throat are less common.</p>
+                    </div>
+                    <p>Cases can progress to pneumonia, multi-organ failure and death in the most vulnerable.</p>
+                    <p>The incubation period ranges from two to 14 days, with an estimated median incubation period of five to six days, according to the World Health Organization (WHO).The median time from onset to clinical recovery for mild cases is approximately 2 weeks and is 3–6 weeks for people with severe or critical disease. Preliminary data suggests that the time period from onset to the development of severe disease, including hypoxia, is 1 week. Among people who have died, the time from symptom onset to outcome ranges from 2–8 weeks.</p>
+                    <p>There are 3 main paths that the disease might take. Firstly, it might be a mild disease that resembles other common upper respiratory diseases. The second path leads to pneumonia, that is infection of the lower respiratory system. The third path, the most severe, is a rapid progression to acute respiratory distress syndrome (ARDS).</p>
+                </div>
+                <div id="a3" class="panel text">
+                    <h3 style="text-align: left;">WHAT CAUSES CORONAVIRUS?</h3>
+                    <br>
+                    <div class="jumbotron textjumbo">
+                        <p>The disease is caused by the virus severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), previously referred to as the 2019 novel coronavirus (2019-nCoV). It is primarily spread between people via respiratory droplets from coughs and sneezes.</p>
+                    </div>
+                    <p>Lungs are the organs most affected by COVID-19 because the virus accesses host cells via the enzyme ACE2, which is most abundant in the type II alveolar cells of the lungs. The virus uses a special surface glycoprotein, called "spike", to connect to ACE2 and intrude the hosting cell.</p>
+                    <p>The virus is thought to have an animal origin, through spillover infection. It was first transmitted to humans in Wuhan, China, in November or December 2019, and the primary source of infection became human-to-human transmission by early January 2020. On 14 March 2020, South China Morning Post reported that a 55-year-old from Hubei province could have been the first person to have contracted the disease on 17 November 2019. As of 14 March 2020, 67,790 cases and 3,075 deaths due to the virus have been reported in Hubei province; a case fatality rate (CFR) of 4.54%.</p>
+                </div>
+                <div id="a4" class="panel text">
+                    <h3 style="text-align: left;">HOW CAN WE PREVENT IT?</h3>
+                    <br>
+                    <div class="jumbotron textjumbo">
+                       
+                        <p>Because a vaccine against SARS-CoV-2 is not expected to become available until 2021 at the earliest, a key part of managing the COVID-19 pandemic is trying to decrease the epidemic peak, known as flattening the epidemic curve through various measures seeking to reduce the rate of new infections.</p>
+                    </div>
+                    <p>Slowing the infection rate helps decrease the risk of health services being overwhelmed, allowing for better treatment of current cases, and provides more time for a vaccine and treatment to be developed.</p>
+                    <p>Preventive measures to reduce the chances of infection in locations with an outbreak of the disease are similar to those published for other coronaviruses: stay home, avoid travel and public activities, wash hands with soap and hot water often, practice good respiratory hygiene and avoid touching the eyes, nose, or mouth with unwashed hands. Social distancing strategies aim to reduce contact of infected persons with large groups by closing schools and workplaces, restricting travel and canceling mass gatherings.</p>
+                </div>
+                <div id="a5" class="panel text">
+                    <h3>MANAGEMENT</h3>
+                    <br>
+                    <div class="jumbotron textjumbo">
+                        <p>There are no specific antiviral medications. People are managed with supportive care such as fluid and oxygen support, while at the same time, there is monitoring and supporting other affected vital organs.</p>
+                    </div>
+                    <p>Management of people infected by the virus includes taking precautions while applying therapeutic manoeuvres, especially when performing procedures like intubation or hand ventilation that can generate aerosols.</p>
+                    <p>CDC outlines the specific personal protective equipment and the order in which healthcare providers should put it on when dealing with someone who may have COVID-19: 1) gown, 2) mask or respirator, 3) goggles or a face shield, 4) gloves.</p>
+                </div>
+                <div id="a65" class="panel text">
+                    <h3>WELCOME</h3>
+                    <br>
+                    <div class="jumbotron textjumbo">
+                        <p>Stay informed about the spread of COVID-19 by checking in here daily.</p>
+                    </div>
+                    <br>
+                    <br>
+                    <p>Infomation on this site is updated live following data release.</p>
+                    <br>
+                    <p>If you want to learn more about Coronavirus, click any tab on the left hand side of this text.</p>
+                </div>
+                <a class="btn btn-info backtomenu" href="#about">BACK TO MENU</a>
+            </div>
+        </div>
+    </div>
+    <div id="Gstatistics"></div>
+<br>
+    <div id="myChart" width="100%" height="700px"></div>
+    <div class="jumbotron textjumbo">
+        <h3 style="margin-top:0;">GLOBAL STATISTICS  <sup STYLE="COLOR:CHARTREUSE;font-size:50%;">  LIVE </sup></h3></div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="statisticMain">
+                    <h3>TOTAL CASES</h3>
+                    <div class="jumbotron textjumbo" style="padding:5px;">
+                        <h4 style="font-size:180%;margin:15px; color:deepskyblue; " id="totalC"></h4></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="statisticMain">
+                    <h3>TOTAL DEATHS</h3>
+                    <div class="jumbotron textjumbo" style="padding:5px;">
+                        <h4 style="font-size:180%;margin:15px; color:red; " id="totalD"></h4></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="statisticMain">
+                    <h3>TOTAL RECOVERED</h3>
+                    <div class="jumbotron textjumbo" style="padding:5px;">
+                        <h4 style="font-size:180%;margin:15px; color:chartreuse; " id="totalR"></h4></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row"><br>
+            <div class="col-md-4 col-md-offset-2">
+                <div class="statisticMain">
+                    <h3>TOTAL ACTIVE CASES</h3>
+                    <div class="jumbotron textjumbo" style="padding:5px;">
+                        <h4 style="font-size:180%;margin:15px; color:deepskyblue; " id="totalA"></h4></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="statisticMain">
+                    <h3>NEW CASES</h3>
+                    <div class="jumbotron textjumbo" style="padding:5px;">
+                        <h4 style="font-size:180%;margin:15px; color:red; " id="totalS"></h4></div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="panel panel-dark">Here is a list of all the countries with more than 100 reported cases of Coronavirus. The colors are mainly for aesthetic purposes, except for the black - which indecated the total number of deaths. For specific quantitative infomation, scroll down to the table below.</div>
+        <div id="chart"></div>
+
+    </div>
+    <div id="Nstatistics"></div>
+    <br>
+    <div class="jumbotron textjumbo">
+        <h3 style="margin-top:0;">NATIONAL STATISTICS</h3></div>
+    <div class="panel" style="text-align:center;">If you are using a computer to access this website, click the name of the country to see a graph that demonstrates the change over time.</div>
+        <div id="myModal">
+            <div class="modal-content"><span class="close">&times;</span>
+        <div class="container-fluid" style="width:auto; max-width:1000%;">
+            <!---------------------------------------------------------------------------------------------->
+            
+            <div class="graphouter"  style="width:auto; max-width:1000%;">
+                <div class='graphnumber' id="graphnumber">
+                    
+                </div>
+                <div class="graph" id="graphspace">
+                </div>
+                <div class="graphdays">
+                <div class="graphdaysoffset"></div>
+                <div class="graphdaysdate" id="gdates">
+                    
+                    </div>
+                </div>
+            </div>
+           </div> 
+        </div>
+        </div>
+    <div class="container phoncont">
+        <table>
+            <thead>
+                <th class="makesmaller">COUNTRY</th>
+                <th>CASES</th>
+                <th>DEATHS</th>
+                <th>RECOVERED</th>
+                <th class="activec" style="color:black;">ACTIVE CASES</th>
+                <th class="critical">SERIOUS/CRITICAL</th>
+                <th class="perm">CASES PER MILLION</th>
+                <th>FATALITY RATE</th>
+            </thead>
+            <tbody id="tableBox">
+
+            </tbody>
+
+        </table>
+    </div><div id="useful"></div>
+    <br>
+    <div class="jumbotron textjumbo">
+        <h3 style="margin-top:0;">USEFUL LINKS</h3></div>
+    <div class="container" style="padding-left:60px;">
+    <blockquote class="embedly-card"><h4><a href="https://www.nhs.uk/conditions/coronavirus-covid-19/">Coronavirus (COVID-19)</a></h4><p>You may be at a particularly high risk of getting seriously ill with coronavirus if you: have had an organ transplant and are taking immunosuppressant medicine are having chemotherapy or radiotherapy have blood or bone marrow cancer, such as leukaemia have a severe chest condition, such as cystic fibrosis or severe asthma have another serious health condition</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+        <blockquote class="embedly-card"><h4><a href="https://www.gov.uk/government/publications/coronavirus-action-plan">Coronavirus (COVID-19) action plan</a></h4><p>Tell us whether you accept cookies We use cookies to collect information about how you use GOV.UK. We use this information to make the website work as well as possible and improve government services. Policy paper What the health and social care system across the UK has done to tackle the coronavirus (COVID-19) outbreak, and what it plans to do next.</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+        <blockquote class="embedly-card"><h4><a href="https://www.gov.uk/guidance/coronavirus-covid-19-information-for-the-public">Number of coronavirus (COVID-19) cases and risk in the UK</a></h4><p>Video: How to wash your hands properly Stay at home for 7 days if you have either: a high temperature a new continuous cough This will help to protect others in your community while you are infectious. Do not go to a GP surgery, pharmacy or hospital.</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+        <blockquote class="embedly-card"><h4><a href="https://www.mirror.co.uk/news/uk-news/coronavirus-uk-what-symptoms-what-21399993">Coronavirus symptoms and NHS advice as UK cases confirmed</a></h4><p>The UK has now entered the delay phase of its coronavirus strategy, with the government attempting to push the peak of the virus towards the warmer months. A leaked document suggests that the crisis could last 12 months, with eight million people in the UK requiring hospitalisation.</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+        <blockquote class="embedly-card"><h4><a href="https://www.bbc.co.uk/news/uk-51933410">£350bn to help UK firms, while operations delayed</a></h4><p>Chancellor Rishi Sunak has unveiled an "unprecedented" set of financial measures to support the UK economy through the coronavirus pandemic. They include mortgage "holidays" for those in financial difficulty as well as £330bn in loans and £20bn in other aid to protect businesses facing losses as a result of the virus.</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+        <blockquote class="embedly-card"><h4><a href="https://www.telegraph.co.uk/global-health/science-and-disease/coronavirus-symptoms-what-covid-19-first-signs-when-self-isolate/">Coronavirus symptoms: how quickly do they show and what to look out for</a></h4><p>The new coronavirus (Covid-19) is spreading fast. More than 204,200 people are known to be infected, and more than 8,200 deaths have been recorded worldwide. The bulk of new cases being recorded each day are now outside China, and the virus is spreading at some speed across Europe.</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+        
+    </div>
+    <div class="container" style="text-align: center;">
+        
+    <div id="contact"></div><br><br>
+        <div class="buymeacoffee" style="margin:0 auto; text-align: center;border:1px solid black;">
+            <br>
+            <br>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick" />
+                <input type="hidden" name="hosted_button_id" value="W4XYHJY9EFKDE" />
+                <input type="image" src="https://becomingdeutsch.files.wordpress.com/2019/08/buy-me-a-coffee-with-paypal.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+            <br>
+            <br>
+        </div>
+    </div>
+   <br>
+    <div class="jumbotron textjumbo" style="margin-bottom:0;background-color:black;">
+        <h3 style="margin-top:0;">CONTACT THOMAS FAHEY</h3></div>
+    <div class="container-fluid background2">
+
+        <div class="container phonecontainer">
+            <div class="contact-form">
+                <br>
+                <br>
+                <form action="https://formspree.io/mgezypja" method="POST">
+                    <div class="form-group">
+                        <label>
+                            <br> Your name:
+                            <br>
+                            <input type="text" name="name" placeholder="Enter your name...">
+                        </label><br>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <br> Your email:
+                            <br>
+                            <input type="text" name="_replyto" placeholder="Enter your email...">
+                        </label><br>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <br> Your message:
+                            <br>
+                            <br>
+                            <textarea name="message" cols="140" rows="7" placeholder="Compose your message..."></textarea>
+                        </label>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+
+                    <button class="btn btn-info" type="submit">Send</button>
+                    <br>
+                    <br>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron textjumbo" style="margin-bottom:0;background-color:black;">
+        <p style="margin-top:0;">Website Designed and Developed By Thomas Fahey - Copyright 2020.</p>
+    </div>
+    <script>
+
+
+        
+        function displaymenu() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('hamburger').style.display = 'none';
+            document.getElementById('hamburgerhide').style.display = 'block';
+        }
+
+        function hidemenu() {
+            document.getElementById('menu').style.display = 'none';
+            document.getElementById('hamburger').style.display = 'block';
+            document.getElementById('hamburgerhide').style.display = 'none';
+        }
+    </script>
+    <script>
+        function mainnav(ide) {
+            
+            var about = document.getElementById("about");
+            var global = document.getElementById("Nstatistics");
+            var national = document.getElementById("Gstatistics");
+            var contact = document.getElementById("contact");
+            var useful = document.getElementById("useful");
+            const mq = window.matchMedia( "(max-width: 700px)" );
+            
+             switch (ide) {
+                case 1:
+                    about.scrollIntoView();
+                     if (mq.matches) {
+                    hidemenu();
+                    } 
+                    
+                     break;
+                case 2:
+                    global.scrollIntoView();
+                     if (mq.matches) {
+                    hidemenu();
+                    } 
+                     break;
+                case 3:
+                    national.scrollIntoView();
+                     if (mq.matches) {
+                    hidemenu();
+                    } 
+                     break;
+                case 4:
+                    contact.scrollIntoView();
+                     if (mq.matches) {
+                    hidemenu();
+                    } 
+                     break;
+                case 5:
+                    useful.scrollIntoView();
+                     if (mq.matches) {
+                    hidemenu();
+                    } 
+                     break;
+             }
+             
+           
+            
+        }
+        function shower(ide) {
+            var elmnt = document.getElementById("content");
+            var a1 = document.getElementById('a1');
+            var a2 = document.getElementById('a2');
+            var a3 = document.getElementById('a3');
+            var a4 = document.getElementById('a4');
+            var a5 = document.getElementById('a5');
+            var a6 = document.getElementById('a65');
+            const mq = window.matchMedia( "(max-width: 700px)" );
+
+                if (mq.matches) {
+                    elmnt.scrollIntoView();
+                } 
+            
+            switch (ide) {
+                case 1:
+                    a1.style.display = 'block';
+                    a2.style.display = 'none';
+                    a3.style.display = 'none';
+                    a4.style.display = 'none';
+                    a5.style.display = 'none';
+                    a65.style.display = 'none';
+                    break;
+                case 2:
+                    a1.style.display = 'none';
+                    a2.style.display = 'block';
+                    a3.style.display = 'none';
+                    a4.style.display = 'none';
+                    a5.style.display = 'none';
+                    a65.style.display = 'none';
+                    break;
+                case 3:
+                    a1.style.display = 'none';
+                    a2.style.display = 'none';
+                    a3.style.display = 'block';
+                    a4.style.display = 'none';
+                    a5.style.display = 'none';
+                    a65.style.display = 'none';
+                    break;
+                case 4:
+                    a1.style.display = 'none';
+                    a2.style.display = 'none';
+                    a3.style.display = 'none';
+                    a4.style.display = 'block';
+                    a5.style.display = 'none';
+                    a65.style.display = 'none';
+                    break;
+                case 5:
+                    a1.style.display = 'none';
+                    a2.style.display = 'none';
+                    a3.style.display = 'none';
+                    a4.style.display = 'none';
+                    a5.style.display = 'block';
+                    a65.style.display = 'none';
+                    break;
+                case 65:
+                    a1.style.display = 'none';
+                    a2.style.display = 'none';
+                    a3.style.display = 'none';
+                    a4.style.display = 'none';
+                    a5.style.display = 'none';
+                    a65.style.display = 'block';
+                    break;
+            }
+        }
+function show(ide) {
+            var a1 = document.getElementById('a1');
+            var a2 = document.getElementById('a2');
+            var a3 = document.getElementById('a3');
+            var a4 = document.getElementById('a4');
+            var a5 = document.getElementById('a5');
+            var a6 = document.getElementById('a65');
+
+            switch (ide) {
+                case 1:
+                    a1.style.display = 'block';
+                    a2.style.display = 'none';
+                    a3.style.display = 'none';
+                    a4.style.display = 'none';
+                    a5.style.display = 'none';
+                    a65.style.display = 'none';
+                    window.scrollTo(0, 500);
+                    break;
+                case 2:
+                    a1.style.display = 'none';
+                    a2.style.display = 'block';
+                    a3.style.display = 'none';
+                    a4.style.display = 'none';
+                    a5.style.display = 'none';
+                    a65.style.display = 'none';
+                    window.scrollTo(0, 500);
+                    break;
+                case 3:
+                    a1.style.display = 'none';
+                    a2.style.display = 'none';
+                    a3.style.display = 'block';
+                    a4.style.display = 'none';
+                    a5.style.display = 'none';
+                    a65.style.display = 'none';
+                    window.scrollTo(0, 500);
+                    break;
+                case 4:
+                    a1.style.display = 'none';
+                    a2.style.display = 'none';
+                    a3.style.display = 'none';
+                    a4.style.display = 'block';
+                    a5.style.display = 'none';
+                    a65.style.display = 'none';
+                    window.scrollTo(0, 500);
+                    break;
+                case 5:
+                    a1.style.display = 'none';
+                    a2.style.display = 'none';
+                    a3.style.display = 'none';
+                    a4.style.display = 'none';
+                    a5.style.display = 'block';
+                    a65.style.display = 'none';
+                    window.scrollTo(0, 500);
+                    break;
+                case 65:
+                    a1.style.display = 'none';
+                    a2.style.display = 'none';
+                    a3.style.display = 'none';
+                    a4.style.display = 'none';
+                    a5.style.display = 'none';
+                    a65.style.display = 'block';
+                    window.scrollTo(0, 500);
+                    break;
+            }
+        }
+        var totalC = document.getElementById('totalC');
+        var totalD = document.getElementById('totalD');
+        var totalR = document.getElementById('totalR');
+
+        var data = null;
+
+        var xhr = new XMLHttpRequest();
+        xhr.withCredentials = true;
+
+        xhr.addEventListener("readystatechange", function() {
+            if (this.readyState === this.DONE) {
+                //		console.log(this.responseText);
+            }
+        });
+
+        xhr.open("GET", "https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php");
+        xhr.onload = function() {
+            // Begin accessing JSON data here
+            var data = JSON.parse(this.response)
+                           console.log(data);
+             var casenumber = parseInt(data.total_cases.replace(/,/g, ''));
+             var deathnumber = parseInt(data.total_deaths.replace(/,/g, ''));
+             var recovernumber = parseInt(data.total_recovered.replace(/,/g, ''));
+             var activenum = (casenumber - deathnumber - recovernumber);
+             var newnumber = parseInt(data.new_cases.replace(/,/g, ''));
+            
+            var activenumber = activenum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+             var percentagecases = parseFloat((casenumber/7700000000)*100).toFixed(4);
+             var percentagedeaths = parseFloat((deathnumber/casenumber)*100).toFixed(1);
+             var percentagerecover = parseFloat((recovernumber/casenumber)*100).toFixed(1);
+             var percentageactive = parseFloat((activenum/casenumber)*100).toFixed(1);
+             var percentagenew = parseFloat((newnumber/casenumber)*100).toFixed(1);
+            
+            
+            totalC.innerHTML = null;
+            totalD.innerHTML = null;
+            totalR.innerHTML = null;
+            totalA.innerHTML = null;
+            totalS.innerHTML = null;
+
+            totalC.innerHTML = data.total_cases + "  <sub style='font-size:60%;color:white;'>  "+percentagecases+"% of total population.</sub>";
+            totalD.innerHTML = data.total_deaths + "  <sub style='font-size:60%;color:white;'>  "+percentagedeaths+"% of total cases.</sub>";
+            totalR.innerHTML = data.total_recovered + "  <sub style='font-size:60%;color:white;'>  "+percentagerecover+"% of total cases.</sub>";
+            totalA.innerHTML = activenumber + "  <sub style='font-size:60%;color:white;'>  "+percentageactive+"% of total cases.</sub>";
+            totalS.innerHTML = data.new_cases + "  <sub style='font-size:60%;color:white;'>  "+percentagenew+"% of total cases.</sub>";
+
+        }
+        xhr.setRequestHeader("x-rapidapi-host", "coronavirus-monitor.p.rapidapi.com");
+        xhr.setRequestHeader("x-rapidapi-key", "3da1afa133mshf93e5575c414e6fp194dd1jsne310a563b06b");
+
+        xhr.send(data);
+        showcountries();
+
+      var dataw = null;
+      var graphspace = document.getElementById('graphspace');
+      var gdates = document.getElementById('gdates');
+      var gnumber = document.getElementById('graphnumber');
+var xhrw = new XMLHttpRequest();
+xhrw.withCredentials = true;
+
+xhrw.addEventListener("readystatechange", function () {
+	if (this.readyState === this.DONE) {
+		console.log(this.responseText);
+	}
+});
+
+xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=China");
+        
+xhrw.onload = function() {        
+        var data = JSON.parse(this.response);
+                graphspace.innerHTML = "";
+                var x = 1;
+                var pixeltempx = 0;
+		        var pixelsx = 0;
+    var marg = 20;
+    var shape = 0;
+    var maxcases = 0;
+    var maxcases2 = 0;
+    var maxcases3 = 0;
+    var maxcases4 = 0;
+                for (var z in data.response) {
+                    if(data.response[z].cases.total > maxcases) {
+                        maxcases = data.response[z].cases.total;
+                    }
+                }
+                    var todayscases = maxcases;
+                    if (maxcases <= 1000) {
+                        maxcases = 1000
+                    } else if (maxcases <= 5000) {
+                        maxcases = 1500
+                    } else if (maxcases <= 10000) {
+                        maxcases = 10000
+                    } else if (maxcases <=20000) {
+                        maxcases = 20000
+                    } else if (maxcases <= 50000) {
+                        maxcases = 50000
+                    } else if (maxcases <= 80000) {
+                        maxcases = 80000
+                    } else if (maxcases <= 100000) {
+                        maxcases = 100000
+                    }
+                    
+    
+                    maxcases2=(maxcases*3)/4;
+                    maxcases3=(maxcases*2)/4;
+                    maxcases4=(maxcases)/4;
+    
+                    gnumber.innerHTML += "<div class='graphrow'>"+maxcases+"</div><div class='graphrow'>"+maxcases2+"</div><div class='graphrow'>"+maxcases3+"</div><div class='graphrow'>"+maxcases4+"</div>"
+    
+                for (var i in data.response.reverse()) {
+                    
+                    pixeltempx = data.response[i].cases.total;
+		            pixelsx = (100 / maxcases) * pixeltempx
+                    pixeltempxr = data.response[i].deaths.total;
+		            pixelsxr = (100 / maxcases) * pixeltempxr
+                    pixeltempxg = data.response[i].cases.recovered;
+		            pixelsxg = (100 / maxcases) * pixeltempxg
+//                    console.log(pixelsx);
+//		            console.log(data.response[i].cases.total);
+                    
+                    graphspace.innerHTML += "<div class='graphcol' style='height:"+pixelsx+"%;margin-left:"+marg+"px;'><div class='point'></div></div>"+
+                                            "<div class='graphcol2' style='height:"+pixelsxr+"%;margin-left:"+marg+"px;'><div class='point2'></div></div>"+
+                                            "<div class='graphcol3' style='height:"+pixelsxg+"%;margin-left:"+marg+"px;'><div class='point3'></div></div>"
+                    
+                    gdates.innerHTML += "<div class='graphdate'><div style='transform:rotate(-90deg) translateY(-65px);width:150px;'>"+data.response[i].day+"</div></div>"
+                    if (i-1 == data.response.count) {
+                        afsdfsa
+                    }
+                    marg += 20;
+        
+                } }
+xhrw.setRequestHeader("x-rapidapi-host", "covid-193.p.rapidapi.com");
+xhrw.setRequestHeader("x-rapidapi-key", "3da1afa133mshf93e5575c414e6fp194dd1jsne310a563b06b");
+
+xhrw.send(dataw);  
+        
+        
+
+        
+        function showcountries() {
+
+            var tablebox = document.getElementById('tableBox');
+            var chart = document.getElementById('chart');
+            var data = null;
+
+            var xhr = new XMLHttpRequest();
+            xhr.withCredentials = true;
+
+            xhr.addEventListener("readystatechange", function() {
+                if (this.readyState === this.DONE) {
+                    //		console.log(this.responseText);
+                }
+            });
+
+            tablebox.innerHTML = null;
+            xhr.open("GET", "https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_country.php");
+            xhr.onload = function() {
+                // Begin accessing JSON data here
+                var casenumber;
+                var deathnumber;
+                var percentagedead;
+                var country="";
+                var data = JSON.parse(this.response)
+                    //            console.log(data);
+                tablebox.innerHTML = "";
+                for (var i in data.countries_stat) {
+                    
+                    casenumber = parseInt(data.countries_stat[i].cases.replace(/,/g, ''));
+                    deathnumber = parseInt(data.countries_stat[i].deaths.replace(/,/g, ''));
+                    percentagedead = parseFloat(((deathnumber/casenumber)*100).toFixed(1));
+                    country = data.countries_stat[i].country_name.replace(/[.,-\s]/g, '');
+                    tablebox.innerHTML += "<tr><td class='country'><a onclick='countrygraph("+i+");'>" + data.countries_stat[i].country_name + "</a></td><td class='cases'>" + data.countries_stat[i].cases + "</td><td class='deaths'>" + data.countries_stat[i].deaths + "</td><td class='recovered'>" + data.countries_stat[i].total_recovered + "</td><td class='activec'>" + data.countries_stat[i].active_cases + "</td><td class='critical'>" + data.countries_stat[i].serious_critical + "</td><td class='perm'>" + data.countries_stat[i].total_cases_per_1m_population + "</td><td>"+percentagedead+"%</td></tr>"
+                }
+                chart.innerHTML = "";
+                var pixels = 0;
+                var pixeltemp = 0;
+                var pixels1 = 0;
+                var pixeltemp1 = 0;
+                var huero = 0;
+                for (var i in data.countries_stat) {
+                    pixeltemp = parseInt(data.countries_stat[i].cases.replace(/,/g, ''));
+                    if (pixeltemp > 100) {
+                         pixels = (70 / 10500000) * pixeltemp
+                        pixeltemp1 = parseInt(data.countries_stat[i].deaths.replace(/,/g, ''));
+                        pixels1 = (70 / 10500000) * pixeltemp1
+                        huero;
+                        chart.innerHTML += "<div class='countryx'>" + data.countries_stat[i].country_name + "</div><div class='casesx' style='filter: hue-rotate(" + huero + "deg);width:" + pixels + "%;'><div class='deathx' style='width:" + pixels1 + "%;'></div></div><br>"
+                        huero += 15;
+                        //                 <td class='deaths'>"+data.countries_stat[i].deaths+"</td><td class='recovered'>"+data.countries_stat[i].total_recovered+"</td><td class='activec'>"+data.countries_stat[i].active_cases+"</td><td class='critical'>"+data.countries_stat[i].serious_critical+"</td><td class='perm'>"+data.countries_stat[i].total_cases_per_1m_population +"</td></tr>"
+                    }
+                }
+            }
+            xhr.setRequestHeader("x-rapidapi-host", "coronavirus-monitor.p.rapidapi.com");
+            xhr.setRequestHeader("x-rapidapi-key", "3da1afa133mshf93e5575c414e6fp194dd1jsne310a563b06b");
+
+            xhr.send(data);
+        }
+        
+function countrygraph(num) {
+
+ 
+                   modal.style.display = "block"; 
+      var dataw = null;
+      var graphspace = document.getElementById('graphspace');
+      var gdates = document.getElementById('gdates');
+      var gnumber = document.getElementById('graphnumber');
+    graphspace.innerHTML = "";
+    gdates.innerHTML="";
+    gnumber.innerHTML ="";
+var xhrw = new XMLHttpRequest();
+xhrw.withCredentials = true;
+
+xhrw.addEventListener("readystatechange", function () {
+	if (this.readyState === this.DONE) {
+		console.log(this.responseText);
+	}
+});
+
+ switch(num) {
+  case 0:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=China");
+    break;
+  case 1:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Italy");
+    break;
+  case 2:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=USA");
+    break;
+  case 3:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Spain");
+    break;
+  case 4:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Germany");
+    break;
+  case 5:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Iran");
+    break;
+  case 6:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=France");
+    break;
+  case 7:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Switzerland");
+    break;
+  case 8:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=S.Korea");
+    break;
+  case 9:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Uk");
+    break;
+  case 10:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Netherlands");
+    break;
+  case 11:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Austria");
+    break;
+  case 12:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Belgium");
+    break;     
+  case 13:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Norway");
+    break;     
+  case 14:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Portugal");
+    break;     
+  case 15:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Canada");
+    break;     
+  case 16:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Sweden");
+    break;     
+  case 17:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Australia");
+    break;     
+  case 18:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Brazil");
+    break;     
+  case 19:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Israel");
+    break;     
+  case 20:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Turkey");
+    break;     
+  case 21:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Malaysia");
+    break;     
+  case 22:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Denmark");
+    break;     
+  case 23:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Czechia");
+    break;     
+  case 24:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Luxembourg");
+    break;     
+  case 25:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Ireland");
+    break;     
+  case 26:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Japan");
+    break;     
+  case 27:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Ecuador");
+    break;     
+  case 28:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Chile");
+    break;     
+  case 29:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Pakistan");
+    break;     
+  case 30:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Poland");
+    break;     
+  case 31:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Thailand");
+    break;     
+  case 32:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Romania");
+    break;     
+  case 33:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=SaudiArabia");
+    break;     
+  case 34:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Finland");
+    break;     
+  case 35:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Indonesia");
+    break;     
+  case 36:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Greece");
+    break;     
+  case 37:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=Iceland");
+    break;     
+  case 38:
+    xhrw.open("GET", "https://covid-193.p.rapidapi.com/history?country=DiamondPrincess");
+    break;
+  default:
+    // code block
+  }
+        
+xhrw.onload = function() {        
+        var data = JSON.parse(this.response);
+                      console.log(data);
+                graphspace.innerHTML = "";
+                var x = 1;
+                var pixeltempx = 0;
+		        var pixelsx = 0;
+    var marg = 20;
+    var shape = 0;
+    var maxcases = 0;
+    var maxcases2 = 0;
+    var maxcases3 = 0;
+    var maxcases4 = 0;
+                for (var z in data.response) {
+                    if(data.response[z].cases.total > maxcases) {
+                        maxcases = data.response[z].cases.total;
+                    }
+                }
+                    console.log(maxcases);
+                    var todayscases = maxcases;
+                    if (maxcases <= 1000) {
+                        maxcases = 1000
+                    } else if (maxcases <= 5000) {
+                        maxcases = 5000
+                    } else if (maxcases <= 10000) {
+                        maxcases = 10000
+                    } else if (maxcases <=20000) {
+                        maxcases = 20000
+                    } else if (maxcases <= 50000) {
+                        maxcases = 50000
+                    } else if (maxcases <= 80000) {
+                        maxcases = 80000
+                    } else if (maxcases <= 100000) {
+                        maxcases = 100000
+                    }
+                    
+    
+                    maxcases2=(maxcases*3)/4;
+                    maxcases3=(maxcases*2)/4;
+                    maxcases4=(maxcases)/4;
+    
+                    gnumber.innerHTML += "<div class='graphrow'>"+maxcases+"</div><div class='graphrow'>"+maxcases2+"</div><div class='graphrow'>"+maxcases3+"</div><div class='graphrow'>"+maxcases4+"</div>"
+    
+                for (var i in data.response.reverse()) {
+                    
+                    pixeltempx = data.response[i].cases.total;
+		            pixelsx = (100 / maxcases) * pixeltempx
+                    pixeltempxr = data.response[i].deaths.total;
+		            pixelsxr = (100 / maxcases) * pixeltempxr
+                    pixeltempxg = data.response[i].cases.recovered;
+		            pixelsxg = (100 / maxcases) * pixeltempxg
+//                    console.log(pixelsx);
+//		            console.log(data.response[i].cases.total);
+                    
+                    graphspace.innerHTML += "<div class='graphcol' style='height:"+pixelsx+"%;margin-left:"+marg+"px;'><div class='point'></div></div>"+
+                                            "<div class='graphcol2' style='height:"+pixelsxr+"%;margin-left:"+marg+"px;'><div class='point2'></div></div>"+
+                                            "<div class='graphcol3' style='height:"+pixelsxg+"%;margin-left:"+marg+"px;'><div class='point3'></div></div>"
+                    
+                    gdates.innerHTML += "<div class='graphdate'><div style='transform:rotate(-90deg) translateY(-65px);width:150px;'>"+data.response[i].day+"</div></div>"
+                    
+                    marg += 20;
+        
+                } }
+xhrw.setRequestHeader("x-rapidapi-host", "covid-193.p.rapidapi.com");
+xhrw.setRequestHeader("x-rapidapi-key", "3da1afa133mshf93e5575c414e6fp194dd1jsne310a563b06b");
+
+xhrw.send(dataw);  
+            }
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
+</body>
+
+</html>
